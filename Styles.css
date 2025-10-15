@@ -1,0 +1,295 @@
+/* === VARIABLES === */
+:root {
+  --fuente-principal: 'Roboto', sans-serif;
+  --primario: #e8505b;
+  --secundario: #455a64;
+  --negro: #000;
+  --blanco: #fff;
+  --gris-claro: #eceeef;
+  --estrella: #ffd700; /* Amarillo dorado para las estrellas */
+}
+
+/* === ESTILOS GLOBALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+/* === HEADER === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+
+.header img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secundario);
+  font-weight: 500;
+}
+
+.btn-primario {
+  background-color: var(--primario);
+  color: var(--blanco);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* === SECCIÓN BUSCADOR === */
+.buscador {
+  background-color: var(--blanco);
+  padding: 3rem 4rem;
+}
+
+.buscador-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.buscador-formulario {
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 2rem;
+  border-radius: 4px;
+  width: 350px;
+}
+
+.buscador-formulario h2 {
+  margin-bottom: 1rem;
+}
+
+.buscador-formulario input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-secundario {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  border: none;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.img-repartidor {
+  max-width: 350px;
+}
+
+/* === SECCIÓN FUNCIONAMIENTO === */
+.funcionamiento {
+  background-color: var(--primario);
+  color: var(--blanco);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.funcionamiento h2 {
+  margin-bottom: 0.5rem;
+}
+
+.funcionamiento p {
+  margin-bottom: 2rem;
+}
+
+.pasos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.paso {
+  background-color: var(--blanco);
+  color: var(--secundario);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+}
+
+.paso img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* === TESTIMONIALES === */
+.testimonios {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonios h2 {
+  margin-bottom: 2rem;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.testimonio {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: left;
+}
+
+.testimonio img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonio h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* === ESTRELLAS === */
+.estrellas {
+  display: flex;
+  gap: 4px;
+  color: var(--estrella);
+  margin: 0.4rem 0;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+}
+
+.restaurante .estrellas {
+  justify-content: center;
+}
+
+/* === RESTAURANTES === */
+.restaurantes {
+  background-color: var(--gris-claro);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.grid-restaurantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.restaurante {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.restaurante img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+/* === REPARTIDOR === */
+.repartidor-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.repartidor-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.repartidor-contenido img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-contenido h4 {
+  margin-bottom: 0.8rem;
+}
+
+.footer-contenido ul {
+  list-style: none;
+}
+
+.footer-contenido a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gris-claro);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .buscador-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-repartidor {
+    margin-top: 2rem;
+  }
+
+  .contenedor-testimonios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
